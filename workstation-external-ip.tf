@@ -14,5 +14,5 @@ data "http" "workstation-external-ip" {
 
 # Override with variable or hardcoded value if necessary
 locals {
-  workstation-external-cidr = "3.9.19.17"
+  workstation-external-cidr = "3.9.19.17/32"
 }
