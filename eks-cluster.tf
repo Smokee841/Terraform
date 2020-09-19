@@ -52,7 +52,6 @@ resource "aws_security_group" "cluster" {
 }
 
 resource "aws_security_group_rule" "cluster-ingress-workstation-https" {
-  cidr_blocks       = [local.workstation-external-cidr]
   description       = "Allow workstation to communicate with the cluster API Server"
   from_port         = 443
   protocol          = "tcp"
